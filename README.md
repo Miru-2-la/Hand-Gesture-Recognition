@@ -28,7 +28,7 @@ raw (63)               100%            67.5%          0.13ms
 invariant (7)          95.8%           56.7%          0.13ms
 ```
 
-raw hitting 100% on same-session is basically memorization. the cross-session column is the one that actually means something. 67.5% on data the model has never seen, from a different setup, with only 120 samples per class — decent.
+raw hitting 100% on same-session is basically memorization. the cross-session column is the one that actually means something. 67.5% on data the model has never seen, from a different setup, with only 120 samples per class — i wuld say its decent.
 
 ## speed
 
