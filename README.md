@@ -5,7 +5,7 @@ GCSRM 2026
 
 ---
 
-it looks at your hand through a webcam and guesses which gesture you're doing. 4 gestures: 👍 ✌️ ✊ 🖐️. MediaPipe finds the hand, SVM guesses the gesture. that's it.
+it looks at your hand through a webcam and guesses which gesture you're doing. 4 gestures: 👍 ✌️ ✊ 🖐️. MediaPipe finds the hand to guess the gesture. that's it.
 
 ## What you see in the demo
 
