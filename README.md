@@ -1,6 +1,5 @@
-# hand gesture recognition ✋
-
-mirudhula · GCSRM 2026
+# Hand gesture recognition ✋
+GCSRM 2026
 
 **🎥 [watch the demo](https://drive.google.com/file/d/1N6POz3Oi_li4xdndQOq85Y8z_ibbRQHm/view?usp=sharing)** (40 sec)
 
