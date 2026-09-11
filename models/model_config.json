@@ -1,0 +1,12 @@
+{
+  "mode": "raw",
+  "num_features": 63,
+  "classes": [
+    "fist",
+    "open_palm",
+    "peace",
+    "thumbs_up"
+  ],
+  "train_samples": 120,
+  "test_samples": 120
+}
