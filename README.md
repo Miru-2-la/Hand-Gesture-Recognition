@@ -7,11 +7,11 @@ GCSRM 2026
 
 it looks at your hand through a webcam and guesses which gesture you're doing. 4 gestures: 👍 ✌️ ✊ 🖐️. MediaPipe finds the hand, SVM guesses the gesture. that's it.
 
-## what you see in the demo
+## What you see in the demo
 
 green box around your hand, label + confidence at the top, fps + latency at the bottom. all live.
 
-## the "proper" part
+## The "proper" part
 
 the task wanted two things compared:
 
@@ -30,11 +30,11 @@ invariant (7)          95.8%           56.7%          0.13ms
 
 raw hitting 100% on same-session is basically memorization. the cross-session column is the one that actually means something. 67.5% on data the model has never seen, from a different setup, with only 120 samples per class — i wuld say its decent.
 
-## speed
+## Speed
 
 the classifier is basically free (0.13ms). almost all the time goes into MediaPipe finding landmarks (~30ms per frame). so fps sits around 25-30, and the ML is not the bottleneck.
 
-## running it
+## Running it
 
 needs python 3.10 or 3.11. **not 3.12** (mediapipe won't install).
 
@@ -57,7 +57,7 @@ python main.py demo                       # webcam go brrr
 
 in the webcam window: press `1` `2` `3` `4` to save a sample, `q` to quit.
 
-## folder thing
+## Folder thing
 
 ```
 data/     the recorded csvs
@@ -66,13 +66,13 @@ src/      all the code
 main.py   the entry point
 ```
 
-## small notes
+## Small notes
 
 - only x and y from MediaPipe, its z is noisy and made things worse
 - scaler lives inside the sklearn pipeline → no data leakage
 - best model picked by cross-session accuracy, not same-session (that's the whole point)
 
-## if I kept going
+## if I had more time I would:
 
 - waaaay more samples (120 per class is nothing)
 - smooth predictions across frames, they flicker a bit
